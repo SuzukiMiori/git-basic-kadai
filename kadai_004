@@ -1,0 +1,70 @@
+PS C:\Users\bleuc\git_tutorial\git_tutorial>
+PS C:\Users\bleuc\git_tutorial\git_tutorial> # 任意のディレクトリに移動する
+>> cd git_challenge
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> # 1つのファイルをインデックスに登録す
+る
+>> git add git_challenge
+fatal: pathspec 'git_challenge' did not match any files
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git add sample.txt
+>> 
+fatal: pathspec 'sample.txt' did not match any files
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> # 任意のディレクトリに移動する
+>> cd git_challenge
+cd : パス 'C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge\git_challenge' が存在しないた
+め検出できません。
+発生場所 行:2 文字:1
++ cd git_challenge
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\bleuc\...e\git_challenge:String) [Set-L 
+   ocation], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> # 任意のディレクトリに移動する
+>> cd git_challenge
+cd : パス 'C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge\git_challenge' が存在しないた
+め検出できません。
+発生場所 行:2 文字:1
++ cd git_challenge
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\bleuc\...e\git_challenge:String) [Set-L 
+   ocation], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> # 作成したgit_challengeディレクトリに
+移動する
+>> cd git_challenge
+cd : パス 'C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge\git_challenge' が存在しないた  
+め検出できません。
+発生場所 行:2 文字:1
++ cd git_challenge
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\bleuc\...e\git_challenge:String) [Set-L  
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git commit  "１回目のコミット"        
+error: pathspec '１回目のコミット' did not match any file(s) known to git
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git commit -m "１回目のコミット"      
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git add hello_world.txt
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git commit -m "２回目のコミット"
+>> 
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> git status
+>> 
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> # コミットログを確認する
+>> git log
+commit 1341e4190561bfaee3f264c6ffbf71dfd8a67aa3 (HEAD -> main)
+Author: SuzukiMiori <bleu.cygnusx01@gmail.com>
+Date:   Tue Oct 10 01:05:02 2023 +0900
+
+    日本語訳を追記
+PS C:\Users\bleuc\git_tutorial\git_tutorial\git_challenge> 
+ *  履歴が復元されました 
+
+PS C:\Users\bleuc\git_tutorial\git_tutorial> 
+
+
+
+
